@@ -68,6 +68,7 @@ $ git checkout jaesung/webpage-1
 > **중요** 커밋 메세지는 필수!!!
 
 ```bash
+git add .
 git commit -m "Add guideline for git to README.md"
 ```
 
