@@ -3,6 +3,21 @@
     <title>Guzo Studio</title>
     <link rel="icon" type="image/x-icon" href="images/GuzoStudioTitleIcon.png">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('.top').fadeIn();
+                } else {
+                    $('.top').fadeOut();
+                }
+            });
+            $('.top').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 400);
+                return false;
+            });
+        });
+    </script>
 </head>
 
 <style>
@@ -116,7 +131,26 @@ body {
     color: white;
     font-size: 19px;
 }
+    
+a.top{                         
+    position: fixed;
+    right: 50px;
+    bottom: 60px;
+    display: none;
 
+    background-color: #323232;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+ }
 
 
 </style>
@@ -200,6 +234,9 @@ body {
         <div class="footer">
             <p>© GuzoStudio - All Right Reserved</p>
         </div>
+
+     <a href="#" class="top">Top</a> 
+
 </body>
 
 </html>
