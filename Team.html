@@ -1,0 +1,248 @@
+<!doctype html>
+<head>
+    <title>Guzo Studio</title>
+    <link rel="icon" type="image/x-icon" href="images/GuzoStudioTitleIcon.png">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('.top').fadeIn();
+                } else {
+                    $('.top').fadeOut();
+                }
+            });
+            $('.top').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 400);
+                return false;
+            });
+        });
+
+    </script>
+</head>
+
+<style>
+    .header {
+        text-align: center;
+        background: #000000;
+    }
+
+    .footer {
+        padding: 5px;
+        text-align: center;
+        background: #000000;
+        font-size: 10px;
+    }
+
+    .main_txt {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: #2B2B2B;
+        color: white;
+        text-align: center;
+        font-size: 19px;
+        padding-bottom: 1%;
+        padding-top: 1%;
+    }
+
+    .sub_txt {
+        padding: 20px;
+        text-align: center; 
+        background: #323232;
+        font-size: 10px;
+    }
+
+    .txt_one_block {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        color: white;
+        text-align: center;
+        background: #2B2B2B;
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .txt_center {
+        padding: 5px;
+        text-align: center;
+        background: #323232;
+        font-size: 10px;
+        text-align: center;
+        width: 65%;
+    }
+
+    .txt_left {
+        padding: 5px;
+        text-align: center;
+        background: #323232;
+        font-size: 10px;
+        text-align: center;
+        float: left;
+        width: 35%;
+    }
+
+    .txt_right {
+        padding: 5px; 
+        text-align: center; 
+        background: #323232;
+        font-size: 10px;
+        text-align: center;
+        float: right;
+        width: 35%;
+    }
+
+    .product1 {
+        background: #323232;
+        padding-bottom: 15%;
+        padding-top: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        align-content: center
+    }
+
+    .button {
+        background-color: #2B2B2B;
+        border: none;
+        color: white;
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 30px;
+        border: 2px solid #ffffff;
+    }
+
+    .logo {
+        height: 50px
+    }
+
+    .img {
+        height: 300px;
+    }
+
+    .img_sub {
+        width: 8%;
+        height: 8%;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: #2B2B2B;
+        color: white;
+        font-size: 19px;
+    }
+
+    a.top {
+        position: fixed;
+        right: 50px;
+        bottom: 60px;
+        display: none;
+        background-color: #323232;
+        border: none;
+        color: white;
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 30px;
+        border: 2px solid #ffffff;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:visited {text-decoration: none;}
+
+    a:hover {text-decoration: none;}
+    a:focus {text-decoration: none;}
+    a:hover, a:active {-decoration: none;}
+</style>
+
+
+<body>
+
+    <div class="header">
+        <a class="header" href="Intial-Black.html">
+            <img class="img_sub" src="images/GuzoStudioLogo_Color.png"/>
+        </a>
+    </div>
+
+    <div class="main_txt">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h1>Guzo Studio</h1>
+
+        <!-- Temporary moto -->
+        <p><i>Provide creative and interesting moments</i><p>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+    <div class="product1">
+        <h3>Our Team</h3>
+
+        <div class="txt_right">
+            <h2>Gijeong Kwon</h2>
+            <h3>Public Relations</h3>
+            <h3>Gijeong.Kwon@guzostudio.com</h3>
+        </div>
+
+        <div class="txt_left">
+            <h2>Gyuwon Choi</h2>
+            <h3>Android Developer</h3>
+            <h3>Gyuwon.Choi@guzostudio.com</h3>
+        </div>
+
+        <div class="txt_center">
+            <h2>Guzo Studio</h2>
+            <h3>President,  iOS Developer</h3>
+            <h3>support@guzostudio.com</h3>
+        </div>
+    </div>
+
+    <div class="main_txt">
+        <h3>Contact</h3>
+        <div class="txt_one_block">
+            <h2>Guzo Studio</h2>
+
+            <br>
+
+            <a class="txt_one_block" href="https://www.instagram.com/guzostudio/" target="_blank">
+                <!--load a new page for instagram-->
+                <h3>Instagram : @guzostudio</h3>
+            </a>
+
+            <a class="txt_one_block" href="mailto: support@guzostudio.com">
+                <h3>E-mail : support@guzostudio.com</h3>
+            </a>
+
+            <!--<h3>Facebook : NONE</h3>-->
+            <!--<h3>YouTube : NONE</h3>-->
+            <!--<h3>Address: NONE</h3>-->
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>©GuzoStudio - All Right Reserved</p>
+    </div>
+
+    <a href="#" class="top">Top</a>
+
+</body>
+
+</html>
