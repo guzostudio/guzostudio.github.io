@@ -50,14 +50,14 @@
     font-size: 10px;
 }
     
-.txt_one_block{               
-    padding: 5px;      
-    text-align: center; 
+.txt_one_block {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: white;
+    text-align: center;
     background: #2B2B2B;
     font-size: 10px;
-    text-align: center;
-    width:100%;
-}
+    width: 100%;
+    }
    
 .txt_center{               
     padding: 5px;      
@@ -151,7 +151,16 @@ a.top{
     border-radius: 30px;
     border: 2px solid #ffffff;
  }
-
+    
+a { 
+        text-decoration: none;
+        color: black; 
+}
+    
+a:visited { text-decoration: none; }
+a:hover   { text-decoration: none; }
+a:focus   { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
 
 </style>
 <body>
@@ -221,7 +230,12 @@ a.top{
         <div class="txt_one_block">
             <h2>Guzo Studio</h2>
                 
-            <h3>Instagram : @guzostudio</h3>
+            <br>
+
+            <a class="txt_one_block" href="https://www.instagram.com/guzostudio/" target="_blank">
+                <!--load a new page for instagram-->
+                <h3>Instagram : @guzostudio</h3>
+            </a>
             <h3>E-mail : support@guzostudio.com</h3>
                 
             <!--<h3>Facebook : NONE</h3>-->
