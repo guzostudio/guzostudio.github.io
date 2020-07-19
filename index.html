@@ -96,6 +96,22 @@
     text-align:center;
     align-content:center
 }
+    
+.product_txt_left {
+    padding: 5px;
+    text-align: right;
+    background: #323232;     
+    float: left;
+    width: 40%;
+}
+
+.product_txt_right {
+    padding: 5px; 
+    text-align: left; 
+    background: #323232;
+    float: right;
+    width: 40%;
+}
 
 .button {
     background-color: #2B2B2B;
@@ -192,42 +208,43 @@ a:hover, a:active { text-decoration: none; }
 
     
     <div class="product1">
-        <div style="width:1150px;">  <!--To fix the position, prevent to be changed by resolution scale-->
-            <div style="float:left;">
-                <!--<iframe src="http://www.youtube.com/embed/W7qWa52k-nE" width="560" height="315" frameborder="0" allowfullscreen></iframe>-->
-                <!--Demo vid needed-->
-                <img src="images/GuzoAR.png" width="560" height="315">
-            </div>
+        <div class="product_txt_left">
+            <!--<iframe src="http://www.youtube.com/embed/W7qWa52k-nE" width="560" height="315" frameborder="0" allowfullscreen></iframe>-->
+            <!--Demo vid needed-->
+            <img src="images/GuzoAR.png" />
+        </div>
 
-            <div style="float:right;text-align:left">
-                <br></br>
-                <h2>Guzo AR</h2>
-                <h5>You will discover methods of Cardiopulmonary resuscitation(CPR) in AR</h5>
-                <h5>Be a hero with us</h5>
+        <div class="product_txt_right">
+            <br>
+            <h2>Guzo AR</h2>
+            <h5>You will discover methods of Cardiopulmonary resuscitation(CPR) in AR</h5>
+            <h5>Be a hero with us</h5>
 
-                <button class="button" onclick="location.href='https://apps.apple.com/kr/app/guzo-ar/id1470627563'">
-                    App Store
-                </button>
-            </div>
+            <button class="button" onclick="location.href='https://apps.apple.com/kr/app/guzo-ar/id1470627563'">
+                App Store
+            </button>
         </div>
     </div>
 
-
-    <div style="background: #323232; padding-bottom:20%; padding-top:30%;padding-left:10%; padding-right:10%; text-align:center;">
-        <div style="width:1150px">
-            <!--To fix the position-->
-            <div style="float:right">
-                <img src="images/coverGuzowatch.png" width="560" height="315">
-            </div>
-
-            <div style="text-align:left;">
-                <h2>Guzo Watch</h2>
-                <h5>Guzo Watch allows you to do CPR in real situation</h5>
-                <button type="button" class="button" onclick="location.href='https://apps.apple.com/in/app/guzo-watch/id1477483750'">
-                    App Store
-                </button>
-            </div>
+    
+    <div class="product1">
+        <div class="product_txt_right">
+            <img src="images/coverGuzowatch.png" width="560" height="315">
         </div>
+
+        <div class="product_txt_left">
+            <h2>Guzo Watch</h2>
+            <h5>Guzo Watch allows you to do CPR in real situation</h5>
+            <button type="button" class="button" onclick="location.href='https://apps.apple.com/in/app/guzo-watch/id1477483750'">
+               App Store
+            </button>
+        </div>
+
+        <br>   
+        <br>
+        <br>
+        <br>
+              
     </div>
 
 
